@@ -2,14 +2,10 @@ body{
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Outfit', sans-serif;
 }
-.main-container{
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 16px;
-    flex: 1;
-}
 .tablet-hero{
+    display: none;
+}
+.desktop-hero{
     display: none;
 }
 .logo{
@@ -17,6 +13,7 @@ body{
    margin-top: 32px;
    margin-left:16px ;
 }
+
 .darklogo{
     width: 343px;
     height: 110px;
@@ -52,12 +49,22 @@ a button h1{
     letter-spacing: 3.64px;
     line-height: 23.94px;
 }
+.main-container{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 16px;
+}
 .tablet-grid1{
+    display: none;
+}
+.desktop-grid1{
     display: none;
 }
 .grid1{
     margin-top: 120px;
     width: 343px;
+    margin-left: 16px;
 }
 ul{
     font-family: 'Big Shoulders Display', cursive;
@@ -73,6 +80,9 @@ ul{
     font-size: 18px;
     line-height: 28px;
 }
+.desktop-grid2{
+    display: none;
+}
 .grid2{
    margin-top: 32px; 
 }
@@ -80,6 +90,9 @@ ul{
     margin-top: 16px;
     width: 343px;
     
+}
+.desktop-grid3{
+    display: none;
 }
 .tablet-grid3{
     display: none;
@@ -137,60 +150,155 @@ footer img{
     gap: 20px;
 } 
  @media(min-width: 768px) {
-   .tablet-hero{
+.header{
+    display: flex;
+}
+.tablet-hero{
     display: flex;
    }
-   .hero{
+.hero{
     display: none;
    }
-   .header{
-    display: flex;
 
-}
 .logo{
     position:absolute;
     margin-left: 385px;
     margin-top: 120px;
     
 }
-    .tablet{
+
+.image-grid1{
+    display: none;
+}
+.tablet-grid1{
+    display: flex;
+}
+.grid1{
+    display: flex;
+    gap: 56px;
+    margin-left: 50px;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.tablet{
         display: flex;
         flex-direction:row;
         align-items: center;
         
     }
-    .grid2{
+.grid2{
     width: 398px;
     height: 720px;
-    margin: 0px;
+    
     }
-    .grid3{
+.grid3{
        display: none;
     }
     .tablet-grid3{
         display:flex;
         width:280px;
-
+        margin-top: 30px;
     }
-    .last-div{
+    ul{
+        width: 223px;
+    }
+.last-div{
         width:280px ;
         height: 391px;
     }
-    .inside{
+.inside{
         display: flex;
         flex-direction: column;
     }
-    .image-grid1{
-        display: none;
-    }
-    .tablet-grid1{
-        display: flex;
-       
-    }
+
     
-    footer{
+footer{
         display: flex;
         align-items:center;
         height: 216px;
     }
+}
+@media(min-width:1440px){
+    .desktop-hero{
+        display: flex;
+        float: right;
+    }
+    .tablet-hero{
+        display: none;
+    }
+    .half{
+        width: 990px;
+        background-color: black;
+    }
+    .logo{
+        display:flex;
+        gap: 240px;
+    }
+    .logo p{
+        width: 350px;
+        height: 160px;
+    }
+
+    .darklogo{
+        margin-left:-240px ;
+        width: 514px;
+        height: 176px;
+    }
+    .main-container{
+        margin-top: 30px;
+    }
+    .grid1{
+        margin-left:175px;
+        gap: 105px;
+    }
+    .tablet-grid1{
+        display: none;
+    }
+    .desktop-grid1{
+        display: flex;
+    }
+    ul{
+        width: 350px;
+        height: 120px;
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .grid1 p{
+        font-size: 22px;
+        line-height: 32px;
+       
+    }
+    .grid2{
+        display: none;
+    }
+    .desktop-grid2{
+        display: flex;
+        margin-right: 30px;
+    }
+    .tablet-grid3{
+        display: none;
+    }
+    .desktop-grid3{
+        display: flex;
+        
+    }
+    .last-div{
+        width: 445px;
+        height: 377px;
+    }
+    .last-div h1{
+        width: 350px;
+        height: 120px;
+    }
+    .last-div p{
+        width: 350px;
+        height: 96px;
+        font-size: 22px;
+        line-height: 32px;
+    }
+    
 }

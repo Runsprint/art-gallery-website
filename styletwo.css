@@ -3,17 +3,17 @@ body{
     font-family: 'Outfit', sans-serif;
 }
 .main-container{
-    width: 375px;
+    width:100%;
     display:flex;
     justify-content: center;
     flex-direction: column;
 }
-.secondpage{
-    position: relative;
-}
+/* .secondpage{
+    position: ;
+} */
 .secondpage img{
     width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 a button{
     position: absolute;
@@ -104,4 +104,27 @@ footer img{
     margin-left: 32px;
     gap: 20px;
     margin-top: 38px;
+}
+@media(min-width:768px) {
+    button{
+        margin-left: 30px;
+    }
+
+    .fourelements{
+        display: flex;
+        align-items: center;
+    }
+    .fourelements h1{
+        width: 223px;
+    }
+    .fourelements p{
+        width: 398px;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+    }
+    footer img{
+        height: 20px;
+    }
 }
