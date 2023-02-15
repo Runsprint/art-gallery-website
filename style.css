@@ -47,6 +47,9 @@ a button{
     ); 
     color: white; 
 }
+a{
+    text-decoration: none;
+}
 a button h1{
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 800;
