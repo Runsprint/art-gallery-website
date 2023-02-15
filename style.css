@@ -2,6 +2,7 @@ body{
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Outfit', sans-serif;
 }
+
 .tablet-hero{
     display: none;
 }
@@ -14,9 +15,13 @@ body{
    margin-left:16px ;
 }
 
-.darklogo{
-    width: 343px;
-    height: 110px;
+.artgallery{
+    font-family: 'Big Shoulders Display', cursive;
+    width: 9.5ch;
+    color: #151515;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 55px;
 }
 .logo p{
     font-weight: 300;
@@ -49,22 +54,16 @@ a button h1{
     letter-spacing: 3.64px;
     line-height: 23.94px;
 }
-.main-container{
-    display:flex;
+main{
+    width: 100%;
     justify-content: center;
-    flex-direction: column;
-    margin-left: 16px;
-}
-.tablet-grid1{
-    display: none;
-}
-.desktop-grid1{
-    display: none;
 }
 .grid1{
     margin-top: 120px;
-    width: 343px;
-    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+    padding: 16px;
 }
 ul{
     font-family: 'Big Shoulders Display', cursive;
@@ -72,13 +71,30 @@ ul{
     font-size: 50px;
     line-height: 45px;
     margin-top:25px;
-
 }
 .grid1 p{
     margin-top: 21px;
     font-weight: 300;
     font-size: 18px;
     line-height: 28px;
+}
+main{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 11px;
+}
+.image-grid1{
+    display: flex;
+}
+.tablet-grid1{
+    display: none;
+}
+.desktop-grid1{
+    display: none;
+}
+.tablet-grid2{
+    display: none;
 }
 .desktop-grid2{
     display: none;
@@ -89,7 +105,6 @@ ul{
 .grid3{
     margin-top: 16px;
     width: 343px;
-    
 }
 .desktop-grid3{
     display: none;
@@ -100,7 +115,6 @@ ul{
 .last-div{
     background-color: #151515;
     color:#ffffff;
-    width: 343px;
     height: 293px;
     margin-top: 16px;
 }
@@ -127,28 +141,27 @@ footer{
     width: 100%;
     height: 336px;
     margin-top: 120px; 
+    display: flex; 
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 16px;
+    box-sizing: border-box;
+
 }
 .footerlogo{
     width: 110.05px;
-    height: 40px;
-    margin-left: 32px;
-    margin-top:48px ;
 }
 footer p{
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
     font-size: 16px;
-    line-height: 26px;
-    width: 311px;
-    margin-left: 32px;
-    margin-top:48px ;
-    
+    line-height: 26px; 
 } 
-footer img{
-    margin-left: 32px;
-    margin-top:48px ;
+.logos{
+    display: flex;
     gap: 20px;
 } 
+
  @media(min-width: 768px) {
 .header{
     display: flex;
@@ -159,70 +172,83 @@ footer img{
 .hero{
     display: none;
    }
-
 .logo{
     position:absolute;
     margin-left: 385px;
     margin-top: 120px;
-    
 }
-
 .image-grid1{
     display: none;
 }
 .tablet-grid1{
     display: flex;
+    
 }
 .grid1{
     display: flex;
-    gap: 56px;
-    margin-left: 50px;
+    flex-direction: row;
+    justify-content: center;
+}
+ul{
+    width: 223px;
+}
+.grid1p{
+    width: 223px;
 }
 .main-container{
     display: flex;
     align-items: center;
-    margin-left: 0px;
+    margin-top: 11px;
 }
-
 .tablet{
         display: flex;
         flex-direction:row;
         align-items: center;
-        
     }
 .grid2{
-    width: 398px;
-    height: 720px;
-    
+    display: none;
+    } 
+    .tablet-grid2{
+        display: flex;
     }
 .grid3{
        display: none;
     }
-    .tablet-grid3{
+.tablet-grid3{
         display:flex;
-        width:280px;
-        margin-top: 30px;
-    }
-    ul{
-        width: 223px;
-    }
+    } 
 .last-div{
         width:280px ;
         height: 391px;
-    }
-.inside{
-        display: flex;
-        flex-direction: column;
-    }
 
-    
-footer{
-        display: flex;
-        align-items:center;
-        height: 216px;
     }
+.last-div h1{
+    width: 223px;
+    height: 90px;
+}
+.last-div p{
+    width: 223px;
+    height: 112px;
+}  
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logos{
+   display: flex;
+   gap: 20px;
+}
+footer p{
+    width: 281px;
+}
 }
 @media(min-width:1440px){
+    .forbackground{
+        position: absolute;
+        left: 440px;
+    }
     .desktop-hero{
         display: flex;
         float: right;
@@ -234,28 +260,26 @@ footer{
         width: 990px;
         background-color: black;
     }
-    .logo{
-        display:flex;
-        gap: 240px;
+     .logo{
+        top: 100px;
+        left:120px;
     }
-    .logo p{
-        width: 350px;
-        height: 160px;
-    }
-
-    .darklogo{
-        margin-left:-240px ;
-        width: 514px;
-        height: 176px;
+    .artgallery{
+        background: linear-gradient( 90deg, #f0f1ff 60%, #151515 40%);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-left:-223px ;
     }
     .main-container{
         margin-top: 30px;
     }
     .grid1{
-        margin-left:175px;
         gap: 105px;
     }
     .tablet-grid1{
+        display: none;
+    }
+    .tablet-grid2{
         display: none;
     }
     .desktop-grid1{
@@ -270,7 +294,6 @@ footer{
     .grid1 p{
         font-size: 22px;
         line-height: 32px;
-       
     }
     .grid2{
         display: none;
@@ -284,7 +307,6 @@ footer{
     }
     .desktop-grid3{
         display: flex;
-        
     }
     .last-div{
         width: 445px;
@@ -300,5 +322,14 @@ footer{
         font-size: 22px;
         line-height: 32px;
     }
-    
+    footer{
+        height: 284px;
+        
+    }
+    .footerlogo{
+        width: 159.57px;
+    }
+    footer p{
+        width: 430px;  
+    }
 }
