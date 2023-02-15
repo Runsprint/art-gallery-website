@@ -64,7 +64,6 @@ main{
     flex-direction: column;
     gap: 51px;
     padding: 16px;
-    width: 200px ;
 }
 ul{
     font-family: 'Big Shoulders Display', cursive;
@@ -84,10 +83,11 @@ main{
     align-items: center;
     flex-direction: column;
     margin-top: 11px;
-}
+} 
 .image-grid1{
     display: flex;
 }
+
 .tablet-grid1{
     display: none;
 }
@@ -113,28 +113,41 @@ main{
 .tablet-grid3{
     display: none;
 }
+.inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center;
+    padding: 16px;
+    gap: 30px; */
+}
 .last-div{
     background-color: #151515;
     color:#ffffff;
     height: 293px;
     margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    gap: 30px;
+    width: 315px;
 }
 
 .last-div h1{
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 900;
     font-size: 50px;
-    padding-left: 25px;
-    padding-top: 48px;
 }
 .last-div p{
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
     font-size: 18px;
     line-height: 28px;
-    width: 295px;
+    /* width: 295px;
     height:90px ;
-    margin:17px 25px ;
+    margin:17px 25px ; */
 }
 footer{
     background-color: #151515;
@@ -220,8 +233,9 @@ ul{
         display:flex;
     } 
 .last-div{
-        width:280px ;
-        height: 391px;
+    width: 276px;
+    height: 389px;
+    padding: 0px;
 
     }
 .last-div h1{
